@@ -61,6 +61,11 @@ function createInvoice() {
             data: invoiceData,
         },
         {
+            type: "image",
+            originalContentUrl: "https://thumb.ac-illust.com/f0/f0de180fce970dd84d499eae59e4f3a0_t.jpeg",
+            previewImageUrl: "https://thumb.ac-illust.com/f0/f0de180fce970dd84d499eae59e4f3a0_t.jpeg",
+        },
+        {
             type: "text",
             text: `
     金額: ${amount}円
@@ -68,10 +73,10 @@ function createInvoice() {
                     `,
             data: invoiceData,
         },
-        {
-            type: "text",
-            text: `このメッセージは『請求書送信BOT』から送られています`,
-            data: invoiceData,
-        },
+        // {
+        //     type: "text",
+        //     text: `このメッセージは『請求書送信BOT』から送られています`,
+        //     data: invoiceData,
+        // },
     ]);
 }
