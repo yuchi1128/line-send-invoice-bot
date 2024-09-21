@@ -57,16 +57,20 @@ function createInvoice() {
     liff.shareTargetPicker([
         {
             type: "text",
-            text: `請求書送信BOTより請求書が送られました。
-
-                金額: ${amount}円
-                期日: ${dueDate}
+            text: `請求書送信BOTより請求書が送られました`,
+            data: invoiceData,
+        },
+        {
+            type: "text",
+            text: `
+    金額: ${amount}円
+    期日: ${dueDate}
                     `,
             data: invoiceData,
         },
         {
             type: "text",
-            text: `このメッセージは『請求書送信BOTから送られています』`,
+            text: `このメッセージは『請求書送信BOT』から送られています`,
             data: invoiceData,
         },
     ]);
