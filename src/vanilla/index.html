@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <!-- <link rel="stylesheet" href="index.css" /> -->
-  <title>LIFF Starter</title>
+  <title>請求書送信BOT</title>
 </head>
 
 <style>
@@ -165,8 +164,7 @@ html, body {
 <body>
   <div class="home">
     <h1 class="home__title">
-      Welcome to <br /><a class="home__title__link" href="https://developers.line.biz/en/docs/liff/overview/">LIFF
-        Starter!</a>
+      請求書送信BOT
     </h1>
     <div class="home__buttons">
       <hr width="100%" />
@@ -181,11 +179,21 @@ html, body {
       <a id="logout" class="home__buttons__button button--tertiary">
         Logout
       </a>
-      <a id="stp" class="home__buttons__button button--secondary">
-        Share Target Picker
-      </a>
+      <div class="home__input">
+        <h2>請求書の作成</h2>
+        <label for="amount">金額:</label>
+        <input type="number" id="amount" placeholder="金額を入力してください">
+        <label for="due_date">期日:</label>
+        <input type="date" id="due_date" placeholder="期日を入力してください">
+        <button id="create_invoice" class="home__buttons__button button--primary">
+          請求書作成
+        </button>
+      </div>
+
     </div>
   </div>
+
+
 </body>
 
 </html>
