@@ -21,7 +21,7 @@ html, body {
 }
 
 .home__title {
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 1.15;
 }
 
@@ -145,7 +145,7 @@ html, body {
   }
 
   .home__title {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.15;
   }
 
@@ -159,13 +159,46 @@ html, body {
     flex-direction: column;
   }
 }
+
+.home__input {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.home__input h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home__input label {
+  display: block;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.home__input input {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: calc(100% - 1.2rem);
+  margin-bottom: 1rem;
+}
+
+.home__input button {
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+}
 </style>
 
 <body>
   <div class="home">
-    <h1 class="home__title">
+    <h3 class="home__title">
       請求書送信BOT
-    </h1>
+    </h3>
     <div class="home__buttons">
       <hr width="100%" />
       <div>
@@ -179,8 +212,9 @@ html, body {
       <a id="logout" class="home__buttons__button button--tertiary">
         Logout
       </a>
+      <hr width="100%" />
       <div class="home__input">
-        <h2>請求書の作成</h2>
+        <h1>請求書の作成</h1>
         <label for="amount">金額:</label>
         <input type="number" id="amount" placeholder="金額を入力してください">
         <label for="due_date">期日:</label>

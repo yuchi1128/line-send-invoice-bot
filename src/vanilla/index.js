@@ -59,9 +59,14 @@ function createInvoice() {
             type: "text",
             text: `請求書送信BOTより請求書が送られました。
 
-                   金額: ${amount}円,
-                   期日: ${dueDate}
+                金額: ${amount}円
+                期日: ${dueDate}
                     `,
+            data: invoiceData,
+        },
+        {
+            type: "text",
+            text: `このメッセージは『請求書送信BOTから送られています』`,
             data: invoiceData,
         },
     ]);
