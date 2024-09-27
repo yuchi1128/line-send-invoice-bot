@@ -1,7 +1,3 @@
 ## 請求書発行BOT
 
-lineの友達に請求書を送ることのできるlinebotです
-
-<div align="center">
-    <img src="https://github.com/user-attachments/assets/61e35050-e1da-474e-95fe-f18d63cee20e" width="250px" alt="請求書発行BOT">
-</div>
+LINEの友達に請求書を送ることのできるLINE BOTです
